@@ -81,7 +81,7 @@ while [ -n "$CURSOR" ]; do
   # Query in GitHub GraphQL format
   # Query for the first 100 Pull Request updated within the given date range AND having >0 comments (all reviews are considered comments).
   # SubQuery selects only PR Reviews (on returned PRs) which were created since the $START_DATE.
-  # This queries across all projects in the DSpace org: https://github.com/DSpace/
+  # This queries across all projects in the Fedora org: https://github.com/fcrepo4/
   # 
   # Test this query online at https://developer.github.com/v4/explorer/
   # (When testing this query you may wish to append "sort:updated-asc" to see results in a logical order)
@@ -89,7 +89,7 @@ while [ -n "$CURSOR" ]; do
   # NOTE: Make sure to escape any double quotes (\\\") in query
   # NOTE: Descreasing the "first" value of Issues returned to 50 makes this query less prone to response errors, but requires more pages to gather.
   github_query="query {
-    search (first: 50, $CURSOR type: ISSUE, query:\"type:pr user:DSpace comments:>0 updated:$START_DATE..$END_DATE\") {
+    search (first: 50, $CURSOR type: ISSUE, query:\"type:pr user:fcrepo4 comments:>0 updated:$START_DATE..$END_DATE\") {
       edges {
         node {
           ... on PullRequest {

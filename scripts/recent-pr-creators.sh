@@ -77,15 +77,15 @@ while [ -n "$CURSOR" ]; do
   fi
 
   # Query in GitHub GraphQL format
-  # Query for first 100 DSpace Pull Requests created in last month.
-  # This queries across all projects in the DSpace org: https://github.com/DSpace/
+  # Query for first 100 Fedora Pull Requests created in last month.
+  # This queries across all projects in the Fedora org: https://github.com/fcrepo4/
   #
   # Test this query online at https://developer.github.com/v4/explorer/
   # (When testing this query you may wish to append "sort:created-asc" to see results in a logical order)
   #
   # NOTE: Make sure to escape any double quotes (\") in query
   github_query="query {
-    search (first: 100, $CURSOR type: ISSUE, query:\"type:pr user:DSpace created:$START_DATE..$END_DATE\") {
+    search (first: 100, $CURSOR type: ISSUE, query:\"type:pr user:fcrepo4 created:$START_DATE..$END_DATE\") {
       edges {
         node {
           ... on PullRequest {

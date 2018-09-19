@@ -1,19 +1,19 @@
 
-# Top DSpace Contributors
+# Top Fedora Contributors
 
-This GitHub Pages site lists the top [DSpace GitHub](https://github.com/DSpace) contributors *per month*. 
+This GitHub Pages site lists the top [Fedora GitHub](https://github.com/fcrepo4) contributors *per month*.
 
 ## How are the Top Contributors calculated / counted?
 
 ### General Notes
 
-* These statistics are ONLY gathered for activities within the [DSpace organization in GitHub](https://github.com/DSpace).  This means that statistics are an aggregate from all projects under that organization, but they do NOT include activities in [DSpace-Labs](https://github.com/DSpace-Labs) or other organizations.
+* These statistics are ONLY gathered for activities within the [Fedora organization in GitHub](https://github.com/fcrepo4).  This means that statistics are an aggregate from all projects under that organization, but they do NOT include activities in [Fedora-Labs](https://github.com/fcrepo4-labs), [Fedora Extras](https://github.com/fcrepo4-exts) or other organizations.
 * A user's institution/company is *only displayed if it is available in the GitHub user profile*. If you wish your institution to be listed, add it as your "Company" in your GitHub profile. Similar to in your GitHub profile, you can `@mention` your institution's GitHub organization to generate a link to it. (Keep in mind, any updated/changed institution information will not appear until the next report)
 
 ### Top Pull Request Creators (per month)
 
 The list of Top Pull Request creators is calculated based on the following:
-* Pull Request MUST be created under a [DSpace GitHub](https://github.com/DSpace) project.
+* Pull Request MUST be created under a [Fedora GitHub](https://github.com/fcrepo4) project.
 * Pull Request MUST be created in that given month. Updates/changes to older PRs during that month are not considered.
 * Pull Request MUST be in the "open" or "merged" state. At this time, we do NOT count "closed" PRs, as it is assumed they were invalid and/or replaced by a different PR.
 * Pull Requests are only credited based on the *author* of the PR.  We do not check for author(s) of individual commits.
@@ -23,7 +23,7 @@ For the exact calculations, see the [recent-pr-creators.sh](https://github.com/t
 ### Top Pull Request Reviewers (per month)
 
 The list of Top Pull Request reviewers is calculated based on the following:
-* The Review MUST be on a Pull Request created under a [DSpace GitHub](https://github.com/DSpace) project.
+* The Review MUST be on a Pull Request created under a [Fedora GitHub](https://github.com/fcrepo4) project.
 * The Review MUST be a [GitHub Pull Request Review](https://help.github.com/articles/about-pull-request-reviews/). General comments on PRs are NOT included in the count.
 * The Review MUST be created in that given month. 
 * Reviews are counted regardless of the status of the Pull Request (even if the PR is now "closed", your review is counted).
